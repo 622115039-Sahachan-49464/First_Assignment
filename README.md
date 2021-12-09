@@ -20,7 +20,7 @@ easy / hard 5 points
 
 complete + correct 5 points
 
-## My Work 🛠
+## My Insprised Work 🛠
 
 ### 🖼 Application: [`DailyArt`](https://play.google.com/store/apps/details?id=com.moiseum.dailyart2)
 
@@ -29,7 +29,7 @@ complete + correct 5 points
 their screen
 
 <div>
-  <img src=".github/assets/example1.webp" width=300rem/>
-  <img src=".github/assets/example2.webp" width=300rem/>
-  <img src=".github/assets/example3.jpg" width=250rem/>
+  <img src=".github/assets/example1.webp" width=250rem/>
+  <img src=".github/assets/example2.webp" width=250rem/>
+  <img src=".github/assets/example3.jpg" width=200rem/>
 </div>
