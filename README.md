@@ -28,6 +28,8 @@ complete + correct 5 points
 
 their screen
 
-![part1](.github/assets/example1.webp)
-![part2](.github/assets/example2.webp)
-![part3](.github/assets/example3.jpg)
+<div>
+  <img src=".github/assets/example1.webp" width=300rem/>
+  <img src=".github/assets/example2.webp" width=300rem/>
+  <img src=".github/assets/example3.jpg" width=250rem/>
+</div>
