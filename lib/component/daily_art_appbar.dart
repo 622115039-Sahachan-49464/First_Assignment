@@ -9,7 +9,6 @@ class DailyArtAppBar extends StatelessWidget implements PreferredSizeWidget{
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      leading: const Icon(Icons.home),
       title: const Text("The Daily Art Clone"),
     );
   }
