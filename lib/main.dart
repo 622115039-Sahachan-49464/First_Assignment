@@ -12,6 +12,7 @@ class MainApp extends StatelessWidget {
       title: 'The Daily Art silly Clone',
       theme: ThemeData(
         primarySwatch: Colors.purple,
+        fontFamily: 'FC-Minimal-Regular'
       ),
       home: const HomePage(),
     );
