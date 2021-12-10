@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:se494_first_assignment/component/daily_art_appbar.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Scaffold(
+      appBar: DailyArtAppBar(),
+    );
   }
 }
