@@ -5,6 +5,8 @@ class DailyArtPicture extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Image(
+      image: AssetImage("assets/images/bubble_boy.jpg"),
+    );
   }
 }
