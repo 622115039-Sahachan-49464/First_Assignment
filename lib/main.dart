@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:se494_first_assignment/pages/home_page.dart';
 
 void main() => runApp(const MainApp());
 
@@ -12,6 +13,7 @@ class MainApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.purple,
       ),
+      home: const HomePage(),
     );
   }
 }
