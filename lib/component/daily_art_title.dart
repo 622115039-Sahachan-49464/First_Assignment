@@ -6,7 +6,7 @@ class DailyArtTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SliverFixedExtentList(
-      itemExtent: 105.0,
+      itemExtent: 144.0,
       delegate: SliverChildBuilderDelegate(
         (BuildContext context, int index) {
           return Padding(
@@ -14,14 +14,23 @@ class DailyArtTitle extends StatelessWidget {
             child: Column(
               children: const [
                 Text(
-                  "Bubble Boy",
+                  "The Bubble Boy",
                   style: TextStyle(
                     fontSize: 36.0,
                   ),
                   textAlign: TextAlign.center,
                 ),
+                Divider(color: Colors.black,),
                 Text(
-                  "1870 July",
+                  "Paul Peel",
+                  style: TextStyle(
+                    fontSize: 24.0,
+                    color: Colors.orangeAccent
+                  ),
+                ),
+                Divider(color: Colors.black,),
+                Text(
+                  "1884",
                   style: TextStyle(
                     fontSize: 24.0,
                   ),
