@@ -2,6 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:se494_first_assignment/component/daily_art_appbar.dart';
+import 'package:se494_first_assignment/component/daily_art_article.dart';
+import 'package:se494_first_assignment/component/daily_art_bottombar.dart';
+import 'package:se494_first_assignment/component/daily_art_middlebar.dart';
 import 'package:se494_first_assignment/component/daily_art_sidebar.dart';
 
 class HomePage extends StatelessWidget {
@@ -13,34 +16,31 @@ class HomePage extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           const DailyArtAppBar(),
-          SliverGrid(
-            gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
-              maxCrossAxisExtent: 200.0,
-              mainAxisSpacing: 10.0,
-              crossAxisSpacing: 10.0,
-              childAspectRatio: 4.0,
-            ),
+          SliverFixedExtentList(
+            itemExtent: 100.0,
             delegate: SliverChildBuilderDelegate(
                   (BuildContext context, int index) {
-                return Container(
-                  alignment: Alignment.center,
-                  color: Colors.teal[100 * (index % 9)],
-                  child: Text('Grid Item $index'),
-                );
+                return const DailyArtMiddleBar() ;
               },
-              childCount: 20,
+              childCount: 1,
             ),
           ),
           SliverFixedExtentList(
-            itemExtent: 50.0,
+            itemExtent: 650.0,
             delegate: SliverChildBuilderDelegate(
                   (BuildContext context, int index) {
-                return Container(
-                  alignment: Alignment.center,
-                  color: Colors.lightBlue[100 * (index % 9)],
-                  child: Text('List Item $index'),
-                );
+                return DailyArtArticle() ;
               },
+              childCount: 1,
+            ),
+          ),
+          SliverFixedExtentList(
+            itemExtent: 150.0,
+            delegate: SliverChildBuilderDelegate(
+                  (BuildContext context, int index) {
+                return const DailyArtBottomBar() ;
+              },
+              childCount: 1,
             ),
           ),
         ],

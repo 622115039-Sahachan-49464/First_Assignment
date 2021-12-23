@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:se494_first_assignment/component/daily_art_profile_picture.dart';
 
 class DailyArtSideBar extends StatelessWidget {
   const DailyArtSideBar({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class DailyArtSideBar extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.purple,
             ),
-            child: Text('The Profile Pic',style: TextStyle(color: Colors.white),),
+            child: DailyArtProfilePicture(),
           ),
           dailyTile(const Icon(Icons.auto_awesome_mosaic_outlined),"Today", context),
           dailyTile(const Icon(Icons.save),"Archive", context),

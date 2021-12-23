@@ -5,6 +5,6 @@ class DailyArtBottomBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return const Padding(padding: EdgeInsets.all(20.0),child: Text("bottom bar"),);
   }
 }
