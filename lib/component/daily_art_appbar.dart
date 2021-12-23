@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:se494_first_assignment/component/daily_art_picture.dart';
 
-class DailyArtAppBar extends StatelessWidget implements PreferredSizeWidget{
+class DailyArtAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Size get preferredSize => const Size.fromHeight(50);
 
@@ -11,10 +11,11 @@ class DailyArtAppBar extends StatelessWidget implements PreferredSizeWidget{
   Widget build(BuildContext context) {
     return const SliverAppBar(
       pinned: true,
+      title: Text("Bubble Boy"),
       backgroundColor: Colors.white10,
       expandedHeight: 500.0,
       flexibleSpace: FlexibleSpaceBar(
-        background: DailyArtPicture()
+        background: DailyArtPicture(),
       ),
     );
   }

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class DailyArtArticle extends StatelessWidget {
-
   String article = "Lorem ipsum dolor sit amet, consectetur adipiscing elit,"
       "\n sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       "\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi "
@@ -18,13 +17,21 @@ class DailyArtArticle extends StatelessWidget {
   DailyArtArticle({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      child: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: Text(
-          article,
-          style: const TextStyle(fontSize: 24.0),
-        ),
+    return SliverFixedExtentList(
+      itemExtent: 650.0,
+      delegate: SliverChildBuilderDelegate(
+        (BuildContext context, int index) {
+          return Flexible(
+            child: Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Text(
+                article,
+                style: const TextStyle(fontSize: 24.0),
+              ),
+            ),
+          );
+        },
+        childCount: 1,
       ),
     );
   }
