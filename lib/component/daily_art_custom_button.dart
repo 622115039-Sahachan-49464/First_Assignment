@@ -1,10 +1,18 @@
 import 'package:flutter/material.dart';
 
 class DailyArtButton extends StatelessWidget {
-  const DailyArtButton({Key? key}) : super(key: key);
+  Icon icon;
+  String description;
+  DailyArtButton({required this.icon,required this.description});
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Column(
+      children: [
+        const SizedBox(height: 20,),
+        icon,
+        Text(description)
+      ],
+    );
   }
 }
