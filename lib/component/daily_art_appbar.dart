@@ -11,7 +11,7 @@ class DailyArtAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return const SliverAppBar(
       pinned: true,
-      title: Text("Bubble Boy"),
+      title: Text("The Bubble Boy"),
       backgroundColor: Colors.white10,
       expandedHeight: 500.0,
       flexibleSpace: FlexibleSpaceBar(
